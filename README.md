@@ -15,9 +15,10 @@ public class HelloWorld
 {
     static public void Main ()
     {
-        string url = @"https://sandbox.komoju.com/api/v1/payments";
+        string url = @"https://komoju.com/api/v1/payments";
         WebClient client = new WebClient();
-        String username = "komoju-mart";
+        # set private key of your komoju account as username. 
+        String username = "<YOUR_KOMOJU_ACCOUNT_PRIVATE_KEY>";
         String password = "";
 
         string credentials = Convert.ToBase64String(Encoding.ASCII.GetBytes(username + ":" + password));
